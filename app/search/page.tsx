@@ -27,7 +27,7 @@ function GroceryList() {
       setLoading(true);
       try {
 
-        const response = await fetch(`http://localhost:8000/api/search?query=${searchQuery}`);
+        const response = await fetch(`https://backend-copy-enqv.onrender.com/api/search?query=${searchQuery}`);
 
         if (!response.ok) {
           throw new Error("Network response was not ok");
